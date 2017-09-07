@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>About Me</title>
+    </head>
+
+    <body>
+
+    <h1><b>About Me</b></h1>
+
+    <img src="C:\Users\ndome\OneDrive\Documents\Documents\School\Web Design\2017fall\.git\pic\Nick.jpg" alt="Nick"   height="200" width="200">
+
+    <p> 
+    My experience with computers thus far is that I have taken CS1, CS2, CS3, Assembly language, discrete algorithm, 
+    and digital logic.  I am proficient is java, and familiar with c, and c++. I have been the point person on troubleshooting 
+    on tech issues at work (Shoprite) , basic computer issues on PC, POS, and tablets (very limited access). 
+	What I see myself using the skills I'll learn in this class is building my own website for my YouTube channel;
+      The Garden Nerd (  https://www.youtube.com/channel/UCkiwRLE7TxK4dRYoLYjfq7w) to help build my brand,  more of  hobby,
+       fun, and to help build my portfolio /resume. I also see the possibility of getting some side jobs building websites for 
+       people and businesses.  
+
+    </p>
+    </body>
+    </html>
