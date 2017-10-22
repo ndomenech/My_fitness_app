@@ -1,74 +1,17 @@
-<style>
-    body{
-        background:url('https://dcrazed.com/wp-content/uploads/2016/02/white-brick-wall-texture.jpg');
-        padding:50px;
-    }
-
-    #login-dp{
-        min-width: 250px;
-        padding: 14px 14px 0;
-        overflow:hidden;
-        background-color:rgba(255,255,255,.8);
-    }
-    #login-dp .help-block{
-        font-size:12px    
-    }
-    #login-dp .bottom{
-        background-color:rgba(255,255,255,.8);
-        border-top:1px solid #ddd;
-        clear:both;
-        padding:14px;
-    }
-    #login-dp .social-buttons{
-        margin:12px 0    
-    }
-    #login-dp .social-buttons a{
-        width: 49%;
-    }
-    #login-dp .form-group {
-        margin-bottom: 10px;
-    }
-    .btn-fb{
-        color: #fff;
-        background-color:#3b5998;
-    }
-    .btn-fb:hover{
-        color: #fff;
-        background-color:#496ebc 
-    }
-    .btn-tw{
-        color: #fff;
-        background-color:#55acee;
-    }
-    .btn-tw:hover{
-        color: #fff;
-        background-color:#59b5fa;
-    }
-    @media(max-width:768px){
-        #login-dp{
-            background-color: inherit;
-            color: #fff;
-        }
-        #login-dp .bottom{
-            background-color: inherit;
-            border-top:0 none;
-        }
-    }
 
 
     .top-buffer { margin-top:100px; }
-</style>
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#" ><img src="_ref/Get Fit logo.jpg" style="width:100%"></a>
+        <a class="navbar-brand" href="#" ><img src=".\src\Get Fit logo.jpg" style="width:100%"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="activites.htm">Activities</a>
-            <a class="nav-item nav-link" href="calories.htm">Calories</a>
+            <a class="nav-item nav-link active" id="home-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" id="activities-link" href="activities.html">Activities</a>
+            <a class="nav-item nav-link" id="calories-link" href="calories.html">Calories</a>
             <a class="nav-item nav-link disabled" href="#">Disabled</a>
             </div>
         </div>
