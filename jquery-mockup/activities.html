@@ -36,45 +36,57 @@
              
             <div align="left" class="col-3">
                 <div class="dropdown">  
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item" type="button">Action</button>
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">Something else here</button>
-                    </div>
+                    <select id ="userExercise">
+                        <option value=#></option>
+                        <option value="situp">situp</option>
+                        <option value="pushup">pushup</option>
+                        <option value="pullup">pullup</option>
+                        <option value="situp">squats</option>
+                        <option value="runnin">running</option>
+                        <option value="other">other</option>
+                    </select>
                   </div>
             </div>
             <div class="col-4">
                 <div class="input-group">
-                    <span class="input-group-btn">
-                      <button class="btn btn-secondary" type="button" onclick="activityAdd()">ADD</button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="How many ?" aria-label="How many ?">
+                        <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button" onclick="addActivity" >ADD</button>
+                         </span>
+                    <input  type="text" id="userAmount"  class="form-control" placeholder="How many ?" aria-label="How many ?">
                   </div>
             </div>
             <div class="col-3"> <p1><b>Your Workout</b></p1>
                 <ul class="list-group" id="activityList" >
-                    <li class="list-group-item "></li>
-                    
-                  </ul>
+                        <li>Activities</li> 
+                              
+                </ul>
             </div>
 
           </div>
 
+          <div class="row"  margin=10px>
+                <div class="col-1"></div>
+                <div class="col-3">
+                        <input type='button' onclick="addElement()"   value='Submit'/> 
+                </div>
+
+
+        </div>
       <script>
         var navProperties = {
             mainNav: "_nav.html",
             currentSection: "activities"
         };
-    </script>
-    <script src="dist/bundle.js" >
-    </script>
+        </script>
+        <script src="dist/bundle.js" >
+        </script>
+        
+        
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="addActivity.js"></script>
     <script src="navigation.js">
     </script>
 </body>

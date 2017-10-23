@@ -16,13 +16,3 @@ $(function(){
 });
 
 
-function activityAdd() {
-    var count = 1;
-    var ul = document.getElementById("list");
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode( count.toString() ) );
-    li.setAttribute("id", "element" + count ); // added line
-    ul.appendChild(li);
-    alert(li.id);
-    count++;
-  }
