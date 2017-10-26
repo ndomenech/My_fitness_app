@@ -38,40 +38,39 @@
                 <div class="dropdown">  
                     <select id ="userExercise">
                         <option value=#></option>
-                        <option value="situp">situp</option>
-                        <option value="pushup">pushup</option>
-                        <option value="pullup">pullup</option>
-                        <option value="situp">squats</option>
-                        <option value="runnin">running</option>
-                        <option value="other">other</option>
+                        <option value="SIT-UP">SIT-UP</option>
+                        <option value="PUSH-UP">PUSH-UP</option>
+                        <option value="PULL-UP">PULL-UP</option>
+                        <option value="SQUAT">SQUAT</option>
+                        <option value="RUNNING">RUNNING</option>
+                        <option value="SWIMMING">SWIMMING</option>
                     </select>
                   </div>
             </div>
             <div class="col-4">
                 <div class="input-group">
                         <span class="input-group-btn">
-                                <button class="btn btn-secondary" type="button" onclick="addActivity()" >ADD</button>
+                                <button id="btn1" class="btn btn-secondary" type="button" onclick=addAct() >ADD</button>
                          </span>
                     <input  type="text" id="userAmount"  class="form-control" placeholder="How many ?" aria-label="How many ?">
                   </div>
             </div>
-            <div class="col-3"> <p1><b>Your Workout</b></p1>
-                <ul class="list-group" id="activityList" >
-                        <li>Activities</li> 
-                              
-                </ul>
+            <div id="actList-placeholder">
+                
+ 
             </div>
-
+            <div class="row"  margin=10px>
+                <div class="col-1"></div>
+                 
+               
           </div>
 
-          <div class="row"  margin=10px>
-                <div class="col-1"></div>
-                <div class="col-3">
-                        <input type='button' onclick="addActivity()"   value='Submit'/> 
-                </div>
+          
 
 
         </div>
+
+        
       <script>
         var navProperties = {
             mainNav: "_nav.html",

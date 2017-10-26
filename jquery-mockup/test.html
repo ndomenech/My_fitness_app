@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+    <ul id="list">
+        <li id="element1">One</li>
+        <li id="element2">Two</li>
+        <li id="element3">Three</li>
+    </ul> 
+
+    <button onclick=function1()>This Function</button>
+
+
+
+<script>
+    function function1() {
+  var ul = document.getElementById("list");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode("Four"));
+  ul.appendChild(li);
+}
+</script>
+
+</html>
