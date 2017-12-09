@@ -37,7 +37,7 @@
             <div align="left" class="col-3">
                 <div class="dropdown">  
                     <select id ="userExercise">
-                        <option value=#></option>
+                        <option></option>
                         <option value="SIT-UP">SIT-UP</option>
                         <option value="PUSH-UP">PUSH-UP</option>
                         <option value="PULL-UP">PULL-UP</option>
@@ -47,14 +47,19 @@
                     </select>
                   </div>
             </div>
-            <div class="col-4">
+            <div class="col-2">
                 <div class="input-group">
-                        <span class="input-group-btn">
-                                <button id="btn1" class="btn btn-secondary" type="button" onclick=addAct() >ADD</button>
-                         </span>
-                    <input  type="text" id="userAmount"  class="form-control" placeholder="How many ?" aria-label="How many ?">
+                       <input  type="text" id="userAmount"  class="form-control" placeholder="How many ?" aria-label="How many ?">
                   </div>
             </div>
+            <div class="col-2">
+                    <div class="input-group">
+                            <span class="input-group-btn">
+                                    <button id="btn1" class="btn btn-secondary" type="button" onclick=addAct() >ADD</button>
+                             </span>
+                        <input  type="text" id="userCalories"  class="form-control" placeholder="How many Calories ?" aria-label="How many Calories ?">
+                      </div>
+                </div>
             <div id="actList-placeholder">  </div>
             
             <div class="row"  margin=10px>

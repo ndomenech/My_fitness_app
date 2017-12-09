@@ -15,20 +15,50 @@
 </head>
     <body>
 
-        <div id="header-placeholder"> </div>
-        <div id="nav-placeholder"> </div>
+            <div id="header-placeholder"> </div>
+            <div id="nav-placeholder"> </div>
+            
+    
 
-
-        <div class="row-center">
-            <div class="col-4">
-                Dropdown
+        <div class="row">
+            <div class=col-12>...</div>
+        </div>
+        <div class="row">
+            <div class=col-12>...</div>
+        </div>
+        
+        
+        <div class="row"  margin=10px>
+            <div class="col-1"></div>
+             
+            <div align="left" class="col-3">
+                <div class="dropdown">  
+                    <select id ="meals" >
+                        <option value=#></option>
+                        <option value="BREAKFAST">Breakfast</option>
+                        <option value="LUNCH">Lunch</option>
+                        <option value="DINNER">Dinner</option>
+                        <option value="SNACK">Snack</option>
+                        
+                    </select>
+                  </div>
             </div>
-            <div class="col-4">
-                input 
+            <div class="col-2">
+                <div class="input-group">
+                        <input  type="text" id="food"  class="form-control" placeholder="What did you have ?" aria-label="What did you have ?">
+                  </div>
             </div>
-            <div class="col-4">Caleries burnt</div>
-          </div>
-
+            <div class="col-2">
+                <div class="input-group">
+                        <span class="input-group-btn">
+                                <button id="btn1" class="btn btn-secondary" type="button" onclick=addfood() (click)="addfood($event)" >ADD</button>
+                         </span>
+                    <input  type="text" id="calories"  class="form-control" placeholder="how many calories ?" aria-label="how many calories ?">
+                  </div>
+            </div>
+        
+            <div id="mealList-placeholder">  </div>
+        
 
       <script>
         var navProperties = {
@@ -43,7 +73,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="navigation.js"></script>
-    <script src="addActivity.js">
+    <script src="addfood.js">
     </script>
 </body>
 
