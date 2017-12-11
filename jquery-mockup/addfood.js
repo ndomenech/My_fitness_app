@@ -6,7 +6,7 @@ $("#mealList-placeholder").load("_mealList.html", function (){
         var meal = $('#meals').val();
         var food = $('#food').val();
         var amount = $('#calories').val();
-        $("#mealList ul").append("<li class='list-group-item' >"+meal+" , "+food+" , "+amount+"</li>");
+        $("#mealList ul").append("<li class='list-group-item' > <b>"+meal+"</b> , "+food+" , "+amount+"</li>");
 
         
         calTotal = parseInt(calTotal) + parseInt(amount); 

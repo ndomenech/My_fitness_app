@@ -1,68 +1,61 @@
 <div class="row">
-    <div class=col-12>...</div>
+        <div class=col-12>. </div>
 </div>
-<div class="row">
-    <div class=col-12>...</div>
-</div>
-
 
 <div class="row" > 
-  <div class="col-1">
-     
-  </div>
-  <div class="col-10" align="center">
-      <p>Select an excerices from the drop down menu, then enter the amount that on the line, then click add to add your excerice to Your Workout. </p>
-  </div>
-  <div class="col-1">
+    <div class="col-1">
+        
+       
+    </div>
+    <div class="col-mid-10" align="center" >
+        <p>Select an excerices from the drop down menu, then enter the amount that on the line, then click add to add your excerice to Your Workout. </p>
+    </div>
+    <div class="col-1">
 
-  </div>
+    </div>
 </div>
 
 
 
 <div class="row"  margin=10px>
-  <div class="col-1"></div>
-   
-  <div align="left" class="col-3">
-      <div class="dropdown">  
-          <select id ="userExercise" >
-              <option value=#></option>
-              <option value="SIT-UP">SIT-UP</option>
-              <option value="PUSH-UP">PUSH-UP</option>
-              <option value="PULL-UP">PULL-UP</option>
-              <option value="SQUAT">SQUAT</option>
-              <option value="RUNNING">RUNNING</option>
-              <option value="SWIMMING">SWIMMING</option>
-          </select>
-        </div>
-  </div>
-  <div class="col-4">
-      <div class="input-group">
-              <span class="input-group-btn">
-                      <button id="btn1" class="btn btn-secondary" type="button" onclick=addAct() (click)="addExercise($event)" >ADD</button>
-               </span>
-          <input  type="text" id="userAmount"  class="form-control" placeholder="How many ?" aria-label="How many ?">
-        </div>
-  </div>
-  <div id="actList-placeholder" [ngValue]="Exercise">
-        <li *ngFor="let x of room.quotes; index as i" 
-        class="list-group-item d-flex justify-content-between align-items-center"
-        [ngClass]="{'list-group-item-success': x.chosen}">
-        {{x.text}}
-        <a href="#" class="btn btn-sm btn-primary"  *ngIf="!chosenQuote() && me.id == room.dealer" (click)="chooseExercise($event, i)">Choose</a>
-        <span  *ngIf="!chosenQuote() && me.id != room.dealer" class="badge badge-secondary">hidden</span>
-        <span  *ngIf="chosenQuote()" class="badge badge-info">{{x.player}}</span>
-    </li>
-      
-
-  </div>
-  <div class="row"  margin=10px>
-      <div class="col-1"></div>
-       
+    
      
-</div>
+    <div align="center" class="col-md-2">
+        <div class="dropdown">  
+            <select id ="userExercise">
+                <option></option>
+                <option value="SIT-UP">SIT-UP</option>
+                <option value="PUSH-UP">PUSH-UP</option>
+                <option value="PULL-UP">PULL-UP</option>
+                <option value="SQUAT">SQUAT</option>
+                <option value="RUNNING">RUNNING</option>
+                <option value="SWIMMING">SWIMMING</option>
+            </select>
+          </div>
+    </div>
+    <div class="col-md-2">
+        <div class="input-group">
+               <input  type="number" id="userAmount"  class="form-control" placeholder="How many/much?" aria-label="How many ?">
+          </div>
+    </div>
+    <div class="col-md-3">
+            <div class="input-group">
+                    
+                <input  type="number" id="userCalories"  class="form-control" placeholder="How many Calories ?" aria-label="How many Calories ?">
+            <span class="input-group-btn">
+                <button id="btn1" class="btn btn-secondary" type="button" onclick=addAct() >ADD</button>
+            </span>
+            </div>
+        </div>
+    
+    
+    <div class="row"  margin=10px>
+        <div class="col-1"></div>
+         
+       
+  </div>
 
-
+  
 
 
 </div>

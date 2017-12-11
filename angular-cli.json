@@ -1,11 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.28.3",
-<<<<<<< HEAD
     "name": "app-test"
-=======
-    "name": "test1"
->>>>>>> master
   },
   "apps": [
     {
@@ -23,11 +19,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-<<<<<<< HEAD
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-=======
-        "./node_modules/bootstrap/dis/scss/bootstrap.scss"
->>>>>>> master
       ],
       "scripts": [],
       "environments": {
