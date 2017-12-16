@@ -1,6 +1,3 @@
-<div class="row">
-        <div class=col-12>. </div>
-</div>
 
 <div class="row" > 
     <div class="col-1">
@@ -8,7 +5,7 @@
        
     </div>
     <div class="col-mid-10" align="center" >
-        <p>Select an excerices from the drop down menu, then enter the amount that on the line, then click add to add your excerice to Your Workout. </p>
+        <p>Select an excerices from the drop down menu, then enter the amount that on the line, then calories, then click add to add your excerice to Your Workout. </p>
     </div>
     <div class="col-1">
 
@@ -43,7 +40,7 @@
                     
                 <input  type="number" id="userCalories"  class="form-control" placeholder="How many Calories ?" aria-label="How many Calories ?">
             <span class="input-group-btn">
-                <button id="btn1" class="btn btn-secondary" type="button" onclick=addAct() >ADD</button>
+                <button id="btn1" class="btn btn-secondary" type="button" (click)="addActivites($event)" >ADD</button>
             </span>
             </div>
         </div>

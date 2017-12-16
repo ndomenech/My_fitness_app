@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { IndexComponent } from './index/index.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { CaloriesComponent } from './calories/calories.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -23,6 +24,7 @@ import { CaloriesComponent } from './calories/calories.component';
     AppComponent,
     HeaderComponent,
     NavComponent,
+    ProfileComponent
    
   ],
   imports: [
@@ -33,6 +35,7 @@ import { CaloriesComponent } from './calories/calories.component';
       { path: 'home', component: IndexComponent },
       { path: 'activities', component: ActivitiesComponent },
       { path: 'calories', component: CaloriesComponent },
+      { path: 'profile', component: ProfileComponent },
       { path: '', pathMatch: 'full', redirectTo: '/home' }
   ])
   ],
