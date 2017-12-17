@@ -4,8 +4,8 @@ const actList = {
     act: [ exercise= String, whatDid= String, calories=number 
         
         ],
-    getXxercise: ()=> actList.meal(),
-    getFood: ()=> actList.food(),
+    getExercise: ()=> actList.exercise(),
+    getWhatDid: ()=> actList.whatDid(),
     getCalories: ()=> actList.calories(),
     List: {
         
