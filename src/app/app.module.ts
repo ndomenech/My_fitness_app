@@ -12,6 +12,7 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { CaloriesComponent } from './calories/calories.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -24,7 +25,8 @@ import { ProfileComponent } from './profile/profile.component';
     AppComponent,
     HeaderComponent,
     NavComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginComponent
    
   ],
   imports: [
@@ -36,6 +38,7 @@ import { ProfileComponent } from './profile/profile.component';
       { path: 'activities', component: ActivitiesComponent },
       { path: 'calories', component: CaloriesComponent },
       { path: 'profile', component: ProfileComponent },
+      { path: 'login', component:LoginComponent },
       { path: '', pathMatch: 'full', redirectTo: '/home' }
   ])
   ],

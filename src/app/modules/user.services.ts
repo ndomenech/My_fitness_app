@@ -13,7 +13,7 @@ export class UserService {
     me: User;
 
     constructor(private http: Http, private router: Router) {
-        this.apiRoot = `//${window.location.hostname}:8081` 
+        this.apiRoot = `//${window.location.hostname}:8081`
         window.fbAsyncInit = function() {
             FB.init({
               appId      : '155936528361123',
@@ -22,15 +22,15 @@ export class UserService {
               version    : 'v2.11'
             });
               
-            FB.AppEvents.logPageView();   
-              
+            FB.AppEvents.logPageView();
+
           };
-        
+
           (function(d, s, id){
              var js, fjs = d.getElementsByTagName(s)[0];
              if (d.getElementById(id)) {return;}
              js = <HTMLScriptElement>d.createElement(s); js.id = id;
-             js.src = "https://connect.facebook.net/en_US/sdk.js";
+             js.src = 'https://connect.facebook.net/en_US/sdk.js';
              fjs.parentNode.insertBefore(js, fjs);
            }(document, 'script', 'facebook-jssdk'));
     }
@@ -52,10 +52,10 @@ export class UserService {
     }
 
     login(name: string, password: string, fbid?: string, picture?: string){
-        this.http.post(this.apiRoot + "/user", { name, password, fbid, picture }).subscribe(
+        this.http.post(this.apiRoot + '/user', { name, password, fbid, picture }).subscribe(
             data => {
                 this.me = data.json();
-                this.http.get(this.apiRoot + "/user").subscribe( data =>{
+                this.http.get(this.apiRoot + '/user').subscribe( data => {
                     this.me = data.json();
                 });
                 this.router.navigate(['/profile']);
@@ -65,7 +65,7 @@ export class UserService {
             },
             () => {}
         )
-        
+
     }
 
 }

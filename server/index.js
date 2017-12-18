@@ -17,7 +17,6 @@ server.use(function(req, res, next) {
 server.use("/client", express.static("./jquery-mockup"))
 server.use("/old", handler.main);
 
-    
 
 //console.log(process.env);
 server.listen(port);

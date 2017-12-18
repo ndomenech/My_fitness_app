@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../modules/user.services';
 import { User } from '../modules/user';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +10,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  User: any;
+    [x: string]: any;
+    
+  
 
     name:string;
     password: string;
@@ -20,10 +24,10 @@ export class LoginComponent implements OnInit {
     }
 
     login(){
-        this.User.login(this.name, this.password)
+        this.UserService.login(this.name, this.password)
     }
     loginFB(){
-        this.User.loginFB();
+        this.UserService.loginFB();
     }
 
 }
