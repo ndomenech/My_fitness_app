@@ -11,23 +11,21 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
     [x: string]: any;
-    
-  
 
     name:string;
     password: string;
 
 
-    constructor( private router: Router) { }
+    constructor(private user: UserService, private router: Router) { }
 
     ngOnInit() {
     }
 
     login(){
-        this.UserService.login(this.name, this.password)
+        this.user.login(this.name, this.password)
     }
     loginFB(){
-        this.UserService.loginFB();
+        this.user.loginFB();
     }
 
 }

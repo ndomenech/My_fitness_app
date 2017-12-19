@@ -1,6 +1,6 @@
 export class User {
     id: number;
-    name: string = 'generic User';
+    name: string = null;
 
 }
 

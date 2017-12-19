@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 declare var window: any;
 declare var FB: any;
 
+
 @Injectable()
 export class UserService {
 
@@ -52,10 +53,10 @@ export class UserService {
     }
 
     login(name: string, password: string, fbid?: string, picture?: string){
-        this.http.post(this.apiRoot + '/user', { name, password, fbid, picture }).subscribe(
+        this.http.post(this.apiRoot + '/user/profile', { name, password, fbid, picture }).subscribe(
             data => {
                 this.me = data.json();
-                this.http.get(this.apiRoot + '/user').subscribe( data => {
+                this.http.get(this.apiRoot + '/user/profile').subscribe( data => {
                     this.me = data.json();
                 });
                 this.router.navigate(['/profile']);

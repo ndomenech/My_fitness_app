@@ -1,0 +1,17 @@
+<input #thing placeholder="Exercise" />
+<input #what placeholder="How long / many" />
+<input type="number" #calories placeholder="Calories" />
+<button (click)="addItem(thing.value,what.value,calories.value)">Add </button>
+
+<table>
+  <tr *ngFor="let list of Lists" style="margin-bottom: 10px;">
+      <td>{{list.descr}}</td> <td><button (click)="removeItem(lists)">Delete</button></td>
+  </tr>
+</table>
+
+  <div class="card-header text-white bg-dark">Calore Count ------- {{calCount}} 
+    <button (click)="resetCal()">Reset Calories</button>
+          </div>
+
+
+          

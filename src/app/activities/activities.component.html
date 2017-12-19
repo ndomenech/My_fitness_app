@@ -1,58 +1,46 @@
 
-<div class="row" > 
-    <div class="col-1">
-        
-       
-    </div>
-    <div class="col-mid-10" align="center" >
-        <p>Select an excerices from the drop down menu, then enter the amount that on the line, then calories, then click add to add your excerice to Your Workout. </p>
-    </div>
-    <div class="col-1">
 
-    </div>
+<div class="row" > 
+<div class="col-1">
+    
+   
+</div>
+<div class="col-mid-10" align="center" >
+    <h6>Enter an excerices, then enter the amount that on the line, then add the caloires then click add to add your excerice to Your Workout. </h6>
+</div>
+<div class="col-1">
+
+</div>
 </div>
 
 
 
-<div class="row"  margin=10px>
-    
-     
-    <div align="center" class="col-md-2">
-        <div class="dropdown">  
-            <select id ="userExercise">
-                <option></option>
-                <option value="SIT-UP">SIT-UP</option>
-                <option value="PUSH-UP">PUSH-UP</option>
-                <option value="PULL-UP">PULL-UP</option>
-                <option value="SQUAT">SQUAT</option>
-                <option value="RUNNING">RUNNING</option>
-                <option value="SWIMMING">SWIMMING</option>
-            </select>
-          </div>
-    </div>
-    <div class="col-md-2">
-        <div class="input-group">
-               <input  type="number" id="userAmount"  class="form-control" placeholder="How many/much?" aria-label="How many ?">
-          </div>
-    </div>
+<div class="row" > 
     <div class="col-md-3">
-            <div class="input-group">
-                    
-                <input  type="number" id="userCalories"  class="form-control" placeholder="How many Calories ?" aria-label="How many Calories ?">
-            <span class="input-group-btn">
-                <button id="btn1" class="btn btn-secondary" type="button" (click)="addActivites($event)" >ADD</button>
-            </span>
+        <div class="card"  id="activityList">
+            <div class="card-header">
+                <b>Your Workout</b>
             </div>
-        </div>
-    
-    
-    <div class="row"  margin=10px>
-        <div class="col-1"></div>
-         
-       
-  </div>
 
-  
+
+    <app-list></app-list>
+
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <button  >Submit</button>
+    </div>
+
+
+
+<div class="row"  margin=10px>
+    <div class="col-1"></div>
+     
+   
+</div>
+
+
 
 
 </div>

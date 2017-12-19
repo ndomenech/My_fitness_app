@@ -13,7 +13,7 @@ import { CaloriesComponent } from './calories/calories.component';
 import { ProfileComponent } from './profile/profile.component';
 
 import { LoginComponent } from './login/login.component';
-
+import { ListComponent } from './widget/list/list.component';
 
 
 
@@ -26,7 +26,8 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     NavComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    ListComponent
    
   ],
   imports: [

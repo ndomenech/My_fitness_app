@@ -17,21 +17,14 @@ export class ActivitiesComponent implements OnInit {
   me: User;
 
 
-  constructor(private http: Http, public user: UserService, private router: Router) { }
+  constructor(private http: Http,  private router: Router) { }
   
   ngOnInit() {
-    if(this.user.me == null){
-        this.router.navigate(['/login']);
-    }
-    this.me = this.user.me;
-    setInterval(()=> this.update(), 1000)
+    
+ 
 }
 
-update(){
-    this.http.get(this.user.apiRoot + '/game/room').subscribe( data =>{
-        this.list = data.json();
-    });
-}
+
 
   
 }
