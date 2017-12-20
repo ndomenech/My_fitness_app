@@ -1,5 +1,6 @@
 const express = require("express");
 const handler = require("./httpHandler");
+const userController = require("./userController")
 
 const bodyParser = require("body-parser");
 
@@ -16,6 +17,7 @@ server.use(function(req, res, next) {
   });
 server.use("/client", express.static("./jquery-mockup"))
 server.use("/old", handler.main);
+server.use("/user", userController.router );
 
 
 //console.log(process.env);

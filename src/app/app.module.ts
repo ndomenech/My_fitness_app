@@ -39,7 +39,7 @@ import { ListComponent } from './widget/list/list.component';
       { path: 'activities', component: ActivitiesComponent },
       { path: 'calories', component: CaloriesComponent },
       { path: 'profile', component: ProfileComponent },
-      { path: 'login', component:LoginComponent },
+      { path: 'login', component: LoginComponent },
       { path: '', pathMatch: 'full', redirectTo: '/home' }
   ])
   ],

@@ -10,6 +10,7 @@ export class ListComponent  {
   calCount: number;
 
   Lists: Array<List>;
+
   constructor(){
       this.Lists = [];
       this.calCount = 0;

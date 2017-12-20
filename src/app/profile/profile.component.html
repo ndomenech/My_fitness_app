@@ -1,5 +1,5 @@
 
-<h1>Welcome {{user.name}}</h1>
+<h1>Welcome </h1>
 
     <div class="row justify-content-around">
         <div class="col-md-4">
@@ -7,24 +7,20 @@
             <div class="card" >
                     <div class="card-body">
                         <h4 class="card-title">Weight</h4>
-                        <p class="card-text">My ideal weight is XXX.</p>
-                        <a  class="btn btn-primary">change</a>
+                        <p class="card-text">My ideal weight is {{goalWeight}}.</p>
+                        <input #GW placeholder="Goal Weight" >
+                        <a (click)="updateGW(GW.value)" class="btn btn-primary">change</a>
                     </div>
                     </div>
                     
-                    <div class="card text" >
-                    <div class="card-body">
-                        <h4 class="card-title">Activity</h4>
-                        <p class="card-text">My ideal activities is XXX a day.</p>
-                        <a  class="btn btn-primary">Change</a>
-                    </div>
-                    </div>
+                    
                     
                     <div class="card text" >
                     <div class="card-body">
                         <h4 class="card-title">Calories</h4>
-                        <p class="card-text">My ideal Calories is XXX a day</p>
-                        <a  class="btn btn-primary">Change</a>
+                        <p class="card-text">My ideal Calories is {{goalCalories}} a day</p>
+                        <input #GC placeholder="Goal Calories" >                        
+                        <a (click)="updateGC(GC.value)" class="btn btn-primary">Change</a>
                     </div>
             </div>
         </div>
@@ -35,24 +31,20 @@
                 <div class="card" >
                         <div class="card-body">
                             <h4 class="card-title">Weight</h4>
-                            <p class="card-text">My current weight is XXX.</p>
-                            <a  class="btn btn-primary">change</a>
+                            <p class="card-text">My current weight is {{currentWeight}}.</p>
+                            <input #CW placeholder="Current Weight" >                            
+                            <a (click)="updateCW(CW.value)" class="btn btn-primary">change</a>
                         </div>
                         </div>
                         
-                        <div class="card text" >
-                        <div class="card-body">
-                            <h4 class="card-title">Activity</h4>
-                            <p class="card-text">My current activities is XXX a day.</p>
-                            <a  class="btn btn-primary">Change</a>
-                        </div>
-                        </div>
+                        
                         
                         <div class="card text" >
                         <div class="card-body">
                             <h4 class="card-title">Calories</h4>
-                            <p class="card-text">My current Calories is XXX a day</p>
-                            <a  class="btn btn-primary">Change</a>
+                            <p class="card-text">My current Calories is {{currentCalories}} a day</p>
+                            <input #CC placeholder="Current Calories" >                                                        
+                            <a (click)="updateCC(CC.value)" class="btn btn-primary">Change</a>
                         </div>
                         </div>
                 

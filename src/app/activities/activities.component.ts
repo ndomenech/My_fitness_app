@@ -17,7 +17,9 @@ export class ActivitiesComponent implements OnInit {
   me: User;
 
 
-  constructor(private http: Http,  private router: Router) { }
+  constructor(private http: Http,  private router: Router) { 
+      
+  }
   
   ngOnInit() {
     

@@ -1,6 +1,6 @@
 export class User {
     id: number;
-    name: string = null;
+    name: string = 'Null Buddy';
 
 }
 
@@ -16,7 +16,15 @@ export class MealList{
     calories: number;
 }
 
-export class Lists{
+export class Lists{ 
+
+    
+}
+
+export class Members{
+    members: User[] = [new User(), new User() ];
     activities: ActivityList[] = [];
     meals: MealList[]= [];
 }
+
+

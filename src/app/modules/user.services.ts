@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User } from './user';
+import { User, Members, ActivityList } from './user';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 
@@ -12,6 +12,7 @@ export class UserService {
 
     apiRoot: string;
     me: User;
+    member: Members;
 
     constructor(private http: Http, private router: Router) {
         this.apiRoot = `//${window.location.hostname}:8081`
@@ -53,12 +54,11 @@ export class UserService {
     }
 
     login(name: string, password: string, fbid?: string, picture?: string){
-        this.http.post(this.apiRoot + '/user/profile', { name, password, fbid, picture }).subscribe(
+        this.http.post(this.apiRoot + '/activities/memebers/user', { name, password, fbid, picture }).subscribe(
             data => {
+                console.log('Login complete');
                 this.me = data.json();
-                this.http.get(this.apiRoot + '/user/profile').subscribe( data => {
-                    this.me = data.json();
-                });
+
                 this.router.navigate(['/profile']);
             },
             err => {
@@ -67,6 +67,21 @@ export class UserService {
             () => {}
         )
 
+    }
+
+    updateActivity(ActivityList){
+        console.log(ActivityList.tostring());
+        const myActivity = ActivityList.tostring();
+        this.http.post(this.apiRoot +  '/activities/memebers/user', {myActivity}).subscribe(
+            data => {
+            this.member = data.json();
+            },
+            err => {
+                console.log(err);
+            },
+            () => {}
+        )
+            ;
     }
 
 }
