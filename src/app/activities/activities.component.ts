@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../modules/user.services';
 import { Http } from '@angular/http';
-import { User, Lists } from '../modules/user';
+import { User, Activities, Room } from '../modules/user';
 
 
 
@@ -13,7 +13,7 @@ import { User, Lists } from '../modules/user';
 })
 export class ActivitiesComponent implements OnInit {
  
-  list = new Lists();
+  list = new Activities();
   me: User;
 
 

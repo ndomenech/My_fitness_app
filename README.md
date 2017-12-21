@@ -2,6 +2,9 @@
 Tracks exercise and calories
 # AppTest
 
+Project notes: 
+login component doesn't load when any bounded data or with the arguments in the constructer. Made a signup component as a mock up for it. 
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
 ## Development server

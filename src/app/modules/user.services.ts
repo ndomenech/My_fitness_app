@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User, Members, ActivityList } from './user';
+import { User, Room , Activities } from './user';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 
@@ -12,10 +12,10 @@ export class UserService {
 
     apiRoot: string;
     me: User;
-    member: Members;
+    room: Room;
 
     constructor(private http: Http, private router: Router) {
-        this.apiRoot = `//${window.location.hostname}:8081`
+        this.apiRoot = `//${window.location.hostname}:8081`;
         window.fbAsyncInit = function() {
             FB.init({
               appId      : '155936528361123',
@@ -23,7 +23,7 @@ export class UserService {
               xfbml      : true,
               version    : 'v2.11'
             });
-              
+
             FB.AppEvents.logPageView();
 
           };
@@ -54,11 +54,12 @@ export class UserService {
     }
 
     login(name: string, password: string, fbid?: string, picture?: string){
-        this.http.post(this.apiRoot + '/activities/memebers/user', { name, password, fbid, picture }).subscribe(
+        this.http.post(this.apiRoot + '/user/room/user', { name, password, fbid, picture }).subscribe(
             data => {
-                console.log('Login complete');
                 this.me = data.json();
-
+                this.http.get(this.apiRoot + '/user/activites').subscribe( data =>{
+                    this.me.activities = data.json();
+                });
                 this.router.navigate(['/profile']);
             },
             err => {
@@ -66,15 +67,16 @@ export class UserService {
             },
             () => {}
         )
+             ;
 
     }
 
     updateActivity(ActivityList){
         console.log(ActivityList.tostring());
         const myActivity = ActivityList.tostring();
-        this.http.post(this.apiRoot +  '/activities/memebers/user', {myActivity}).subscribe(
+        this.http.post(this.apiRoot +  '/user/room/user', {myActivity}).subscribe(
             data => {
-            this.member = data.json();
+            this.room = data.json();
             },
             err => {
                 console.log(err);

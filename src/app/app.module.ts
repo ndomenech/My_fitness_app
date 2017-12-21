@@ -14,6 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { LoginComponent } from './login/login.component';
 import { ListComponent } from './widget/list/list.component';
+import { SigninComponent } from 'app/signin/signin.component';
 
 
 
@@ -27,7 +28,8 @@ import { ListComponent } from './widget/list/list.component';
     NavComponent,
     ProfileComponent,
     LoginComponent,
-    ListComponent
+    ListComponent,
+    SigninComponent
    
   ],
   imports: [
@@ -39,7 +41,7 @@ import { ListComponent } from './widget/list/list.component';
       { path: 'activities', component: ActivitiesComponent },
       { path: 'calories', component: CaloriesComponent },
       { path: 'profile', component: ProfileComponent },
-      { path: 'login', component: LoginComponent },
+      { path: 'login', component: SigninComponent },
       { path: '', pathMatch: 'full', redirectTo: '/home' }
   ])
   ],

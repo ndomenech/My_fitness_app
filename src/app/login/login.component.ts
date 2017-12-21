@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../modules/user.services';
-import { User, Members } from '../modules/user';
+import { User, Room, Activities } from '../modules/user';
 
 import { Router } from '@angular/router';
 
@@ -10,9 +10,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-    [x: string]: any;
-
-    name:string;
+   
+    name: string;
     password: string;
 
 

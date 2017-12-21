@@ -1,30 +1,19 @@
+
+export class Activities {
+    activity: string;
+    whatDid: string;
+    calories: number;
+}
+
 export class User {
     id: number;
-    name: string = 'Null Buddy';
-
-}
-
-export class ActivityList {
-    exercise: string;
-    WhatDid: string;
-    calories: number;
-}
-
-export class MealList{
-    meal: string;
-    WhatHad: string;
-    calories: number;
-}
-
-export class Lists{ 
-
+    name: string = "Moshe Plotkin";
+    activities: Activities[] = [];
+    
     
 }
 
-export class Members{
-    members: User[] = [new User(), new User() ];
-    activities: ActivityList[] = [];
-    meals: MealList[]= [];
+export class Room {
+    Users: User[] = [new User(), new User()];
+    quotes: Activities[] = [];
 }
-
-

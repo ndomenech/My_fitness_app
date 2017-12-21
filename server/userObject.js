@@ -11,9 +11,9 @@ const user = {
     getNextActivity: () => user.activityList[iCurrenActivity++],
     getNextMeal: () => user.mealList[iCurrentMeal++],
     room: {
+        user: [],
+        activities: [],
         
-        activityList: [{ exercise: "", WhatDid: "", calories: 0}],
-        mealList: [{ meal: '', whatHad: "", calories: 0}]
         
     }
 

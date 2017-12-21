@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
-import { Lists, User, Members} from '../modules/user';
+import { Activities, User, Room} from '../modules/user';
 import { UserService } from '../modules/user.services';
 import { Router } from '@angular/router';
 
@@ -12,8 +12,8 @@ import { Router } from '@angular/router';
 export class ProfileComponent implements OnInit {
   [x: string]: any;
 
-  member: Members;
-  list = new Lists();
+  member: Room;
+  list = new Activities();
   me: User;
   calCount: number;
 
