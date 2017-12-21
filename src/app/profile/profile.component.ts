@@ -44,19 +44,19 @@ export class ProfileComponent implements OnInit {
 
   }
 
-  updateGC(goalCalories){
+  updateGC(goalCalories: number){
     this.goalCalories = goalCalories;
   }
 
-  updateGW(goalWeight){
+  updateGW(goalWeight: number){
     this.goalWeight = goalWeight;
   }
 
-  updateCC(currentCalories){
+  updateCC(currentCalories: number){
     this.currentCalories = currentCalories;
   }
 
-  updateCW(currentWeight){
+  updateCW(currentWeight: number){
     this.currentWeight = currentWeight;
   }
 

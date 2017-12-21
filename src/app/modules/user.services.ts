@@ -71,7 +71,7 @@ export class UserService {
 
     }
 
-    updateActivity(ActivityList){
+    updateActivity(ActivityList: any){
         console.log(ActivityList.tostring());
         const myActivity = ActivityList.tostring();
         this.http.post(this.apiRoot +  '/user/room/user', {myActivity}).subscribe(

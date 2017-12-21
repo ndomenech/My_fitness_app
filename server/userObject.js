@@ -10,9 +10,10 @@ const user = {
     meal: meal ,
     getNextActivity: () => user.activityList[iCurrenActivity++],
     getNextMeal: () => user.mealList[iCurrentMeal++],
+    getProfileInfo: () => user.getProfileInfo,
     room: {
         user: [],
-        activities: [],
+        activities: [{exercise:"none", whatDid:"none", calories:"0"}],
         
         
     }

@@ -17,7 +17,7 @@ server.use(function(req, res, next) {
   });
 server.use("/client", express.static("./jquery-mockup"))
 server.use("/old", handler.main);
-server.use("/user", userController.router );
+server.use("/users", userController.router );
 
 
 //console.log(process.env);

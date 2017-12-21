@@ -14,7 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { LoginComponent } from './login/login.component';
 import { ListComponent } from './widget/list/list.component';
-import { SigninComponent } from 'app/signin/signin.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 
@@ -29,7 +29,8 @@ import { SigninComponent } from 'app/signin/signin.component';
     ProfileComponent,
     LoginComponent,
     ListComponent,
-    SigninComponent
+    SigninComponent,
+    
    
   ],
   imports: [
